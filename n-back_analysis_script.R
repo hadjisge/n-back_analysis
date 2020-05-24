@@ -7,8 +7,7 @@ library(tidyverse)
 library(dplyr)
 
 # read in data ---------------------------------------------------------------------------------------
-raw_data <- read_csv("22-4.csv") #in this dataset, the condition is pain and it is session 4. Some of the trials say Session = 5 because the session was interrupted and restarted at that point in a new data file, and they were later concatenated
-
+raw_data <- read_csv("22-4.csv") #substitute output file name here
 
 #using piping, select relevant columns to analyze-----------------------------------------------------
 branch_data <- raw_data %>%
